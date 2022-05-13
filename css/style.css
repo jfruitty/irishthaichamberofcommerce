@@ -1,0 +1,547 @@
+/** 
+* Global styles
+*
+* 1) Colors should better be done in: Colors and styles section
+* 2) Fonts would be great to add in Theme overrides so System Pages will inherit a better font (colors)
+* 3) CSS in HTML blocks not advised but can use for some very specific classes (if they don't leak!)
+* 4) Anything else goes here ;)
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Montserrat:400,700" rel="stylesheet');
+
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+	@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+
+/* Main overrides */
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+/* Copy the styles from dev.
+ This will not override wysiwyg blocks
+*/
+body {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px ; 
+    letter-spacing: 1px;
+    height: 100%;
+    font-family: Lato, sans-serif ;
+    background: #fff;
+    color: #777;
+
+}
+p {
+    margin-bottom: 15px;
+   
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  font-family: Montserrat,sans-serif;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h2 {
+    font-size: 18px;
+    letter-spacing: 6px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+h3 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+h4 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  margin-top: 0;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+}
+h5 {
+    font-size: 14px;
+}
+
+/* Button colors */
+input[type=submit] {
+    background: #FF8200;
+    color: white;
+}
+input[type=submit]:hover {
+    background: #047b09;
+    color: white;
+}
+input.typebutton {
+    background: #FF8200;
+    color: white;
+}
+input[type=button]:hover {
+    background: #047b09;
+    color: white;
+}
+input.nextbutton {
+    background: #FF8200;
+    color: white;
+}
+
+/* Top menu */
+.WaGadgetMenuHorizontal .menuInner ul.firstLevel > li > .item > a {
+    font-size:12px;
+    font-weight:400;
+    font-family: Montserrat, sans-serif;
+}
+
+.WaGadgetMenuHorizontal .menuInner ul.firstLevel>li.sel>.item>a:hover{
+    background: none;
+    color: #e97d7d;
+}
+
+.WaGadgetMenuHorizontal .menuInner ul.firstLevel>li>.item>a:hover {
+     background: none;
+}
+
+.WaGadgetMenuHorizontal .menuInner ul.firstLevel>li>.item:hover>a {
+    background: none;
+    color: #229954;
+}
+
+[class^="WaLayoutItem"] {
+    vertical-align: middle;
+}
+
+/** Icon login */
+
+.WaGadgetLoginForm .loginContainer.loginContainer .loginLink {
+    background: none;
+    color: rgb(0, 0, 0);
+}
+
+.WaGadgetLoginForm .loginContainer.loginContainer .loginLink:hover {
+    background: none;
+    color: #229954;
+}
+
+.nextButton{
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    font-family: Montserrat, sans-serif !important;
+}
+
+.loginButton{
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    font-family: Montserrat, sans-serif !important;
+    background: #047b09 !important;
+}
+
+.menu{
+    color: rgb(255, 0, 0);
+}
+
+/* Custom blocks */
+.bio {
+    padding: 10px 48px;
+    font-size: 14px;
+    line-height: 29px;
+    font-family: Montserrat;
+}
+
+.bio h3 {
+    color: #047b09;
+    text-align: center;
+
+}
+
+.bio h3 small {
+    display: block;
+}
+
+/** Classes with single features */
+
+.row {
+    padding: 10px 40px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  	cursor: pointer;
+  	height: 15px;
+  	width: 15px;
+  	margin: 0 2px;
+  	background-color: #bbb;
+  	border-radius: 50%;
+  	display: inline-block;
+  	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  	background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  	animation-name: fade;
+  	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* CSS for underline */
+.underline span{ 
+	background: #047b09 none repeat scroll 0 0; 
+	display: block; 
+	height: 2px; 
+	margin: 0px auto 15px auto; 
+	width: 70px; 
+	position: relative; 
+}
+
+.underline-minor span{ 
+	background: #FF8200 none repeat scroll 0 0; 
+	display: block; 
+	height: 2px; 
+	margin: 0px auto 5px 0px; 
+	width: 70px; 
+	position: relative; 
+}
+
+/* remove blue bg-color slideshow  */
+.camera_wrap {
+  	background-color: white;
+}
+
+
+.navigationOuterContainer input.nextButton {
+   	background: #047b09;
+}
+
+.item a span{
+	font-size: 12px;
+    font-weight: 400;
+    font-family: Montserrat, sans-serif;
+}
+
+#id_tnkNHk4_container{
+  display: none;
+}
+
+/*	CSS for card section */
+	
+.card-body {
+	display: grid;
+	place-items: center;
+}
+
+.card-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 1200px;
+	margin-block: 2rem;
+	gap: 2rem;
+}
+
+.card-img {
+	max-width: 100%;
+	display: block;
+	object-fit: cover;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	width: clamp(20rem, calc(20rem + 2vw), 22rem);
+	overflow: hidden;
+	box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+	background: #fff;
+}
+
+	.card__body {
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: .5rem;
+}
+
+
+.tag {
+	align-self: flex-start;
+	padding: 1.5em 2.3em;
+	/* border-radius: 1em; */
+	font-size: .75rem;
+}
+
+.tag+.tag {
+	margin-left: .5em;
+}
+
+.tag-blue {
+	background: #56CCF2;
+	background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+	color: #fafafa;
+}
+
+.tag-brown {
+	background: #D1913C;
+	background: linear-gradient(to bottom, #FFD194, #D1913C);
+	color: #fafafa;
+}
+
+.tag-red {
+	background: #cb2d3e;
+	background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+	color: #fafafa;
+}
+
+.card__body h4 {
+	font-size: 1.5rem;
+	text-transform: capitalize;
+}
+
+.card__footer {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	margin-top: auto;
+}
+
+.user {
+	display: flex;
+	gap: .5rem;
+}
+
+.user__image {
+	border-radius: 50%;
+}
+
+.user__info>small {
+	color: #666;
+}
+
+.link {
+	color: #38d559;
+	text-decoration: none;
+}
+
+/* The Modal (background) */ 
+.modal { 
+	display: none; 
+	position: fixed; 
+	z-index: 1; 
+	padding-top: 100px; 
+	left: 0; top: 0; 
+	width: 100%; 
+	height: 100%; 
+	overflow: auto; 
+	background-color: rgba(0, 0, 0, 0.4);  }
+/* Modal Content */
+.modal-content { 
+	position: relative; 
+	margin: auto; 
+	padding: 0; 
+	border: 1px solid #888; 
+	width: 50%; 
+	box-shadow: 0 0.1rem 1rem rgb(0 0 0 / 10%); 			border-radius: 1em; 
+    background: #ECE9E6; 
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); 
+    -webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s; 
+    animation-name: animatetop; 
+    animation-duration: 0.4s } 
+
+/* Add Animation */ 
+@-webkit-keyframes animatetop { 
+  	from { top: -300px; opacity: 0 } 
+  	to { top: 0; opacity: 1 } } 
+@keyframes animatetop { 
+  	from { top: -300px; opacity: 0 } 
+  	to { top: 0; opacity: 1 } } 
+/* The Close Button */ 
+.close{ 
+    color: #000; 
+    float: right; 
+    font-size: 28px; 
+    font-weight: bold; 
+    margin-right: 2%; } 
+
+         .close:hover, .close:focus{ 
+           color: #000; 
+           text-decoration: none; 
+           cursor: pointer; } 
+
+        .modal-header { padding: 2px 16px; background-color: #FFFFFF; color: white; } 
+        .modal-body { padding: 2px 16px; } 
+        .modal-footer { padding: 2px 16px; background-color: #FFFFFF; color: white; }
+
+
+/* CSS for FAQ section */
+.collapsible {
+  	font-size: 20px;
+	font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 1px;
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  
+}
+
+.collapsible.active, .collapsible:hover {
+  background-color: #fff;
+}
+
+.content-col {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #fff;
+}
+
+.content-col p{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/*  CSS for Modal box   */
+figure.detail-box {
+   font-family: 'Raleway', Arial, sans-serif;
+   position: relative;
+   overflow: hidden;
+   margin: 10px;
+   min-width: 220px;
+   max-width: 310px;
+   width: 100%;
+   color: #333;
+   text-align: left;
+   box-shadow: none !important;
+}
+
+figure.detail-box.member-box {
+	max-width: unset;
+	margin: 10px auto 10px auto;
+	text-align: center;
+}
+
+figure.detail-box * {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+	transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+	}
+
+figure.detail-box img {
+	max-width: 100%;
+	vertical-align: middle;
+	height: 90px;
+	width: 90px;
+	border-radius: 50%;
+	margin: 40px 0 0 10px;
+}
+
+figure.detail-box blockquote {
+	display: block;
+	border-radius: 8px;
+	position: relative;
+	background-color: #fafafa;
+	padding: 25px 50px 30px 50px;
+	font-size: 0.8em;
+	font-weight: 500;
+	margin: 0;
+	line-height: 1.6em;
+}
+
+figure.detail-box .author {
+	position: absolute;
+	bottom: 45px;
+	padding: 0px 0px 0 105px;
+	margin: 0;
+	text-transform: uppercase;
+	color: #ffffff;
+	-webkit-transform: translateY(50%);
+	transform: translateY(50%);
+}
+
+figure.detail-box.member-box .author {
+	padding: 0 10px 0 120px;
+}
+
+figure.member-box .author {
+	position: absolute;
+	bottom: 45px;
+	padding: 0 10px 0 120px;
+	margin: 0;
+	text-transform: uppercase;
+	color: #ffffff;
+	-webkit-transform: translateY(50%);
+	transform: translateY(50%);
+}
+
+figure.detail-box .author h5 {
+	opacity: 0.8;
+	margin: 0;
+	font-weight: 800;
+}
+
+figure.detail-box .author h5 span {
+	font-weight: 400;
+	text-transform: none;
+	padding-left: 5px;
+}
+
+.bodysnip {
+	background-color: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: wrap;
+	margin: 0;
+	height: 100%;
+}
+
+.membername {
+	cursor: pointer;
+}
+
+.membername:hover {
+	color: #e97d7d;
+}
+
+.email{
+	border-radius: 0% !important;
+    margin: 0px 0 0 0px !important;
+    width: 210px !important;
+    height: 25px !important;
+}
+
