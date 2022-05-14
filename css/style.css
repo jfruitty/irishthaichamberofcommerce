@@ -11,7 +11,7 @@
 
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 
-	@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
 
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
@@ -545,3 +545,11 @@ figure.detail-box .author h5 span {
     height: 25px !important;
 }
 
+a {
+	cursor: pointer;
+
+}
+
+a:hover {
+	color: #e97d7d;
+}
