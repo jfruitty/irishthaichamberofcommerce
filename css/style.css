@@ -345,8 +345,10 @@ input.nextbutton {
 }
 
 .link {
-	color: #38d559;
+
+	color: #666;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 /* The Modal (background) */ 
